@@ -1,0 +1,35 @@
+.not_found {
+  background: #182E33;
+  background-image: url('../../Img/Path 20.png');
+  background-repeat: no-repeat;
+  /*height: calc(100vh - 98px);*/
+
+  h1 {
+    font-family: 'Montserratarm-ExtraBold';
+    font-size: 80px;
+    color: #FBDD00;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    text-shadow: 2px 2px 4px #182e33;
+  }
+
+  p {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Montserratarm-Medium';
+    text-align: center;
+  }
+
+  .img {
+    width: 400px;
+    padding-bottom: 100px;
+    margin: auto;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}

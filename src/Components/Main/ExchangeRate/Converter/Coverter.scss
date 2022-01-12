@@ -1,0 +1,20 @@
+.exchange_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  @media screen and (max-width: 900px){
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .form_cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 900px){
+     margin: 20px;
+    }
+  }
+}

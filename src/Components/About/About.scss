@@ -1,0 +1,147 @@
+.about {
+  background-color: #182E33;
+  background-image: url('../../Img/Path 20.png');
+  background-repeat: no-repeat;
+
+  .container {
+    width: 60%;
+    margin: auto;
+    @media (max-width: 1500px) {
+      width: 80%;
+    }
+    @media (max-width: 1000px) {
+      width: 85%;
+    }
+
+    .title {
+      font-family: 'Montserratarm-ExtraBold';
+      font-size: 45px;
+      color: #FBDD00;
+      margin: 0;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-top: 30px;
+      text-shadow: 2px 2px 4px #182e33;
+    }
+
+    .about_block {
+      background-color: #00000087;
+      border-radius: 57px;
+      padding-top: 55px;
+      padding-left: 44px;
+      height: 453px;
+      display: flex;
+      margin-bottom: 150px;
+      position: relative;
+
+      .about_img {
+        position: relative;
+        width: 45%;
+        height: 100%;
+
+        img {
+          position: absolute;
+          height: 120%;
+          @media (max-width: 1000px) {
+            height: 97%;
+          }
+          @media (max-width: 900px) {
+            position: unset;
+            width: 300px;
+          }
+          @media (max-width: 650px) {
+            width: 200px;
+          }
+          @media (max-width: 400px) {
+            width: 130px;
+          }
+        }
+
+        @media (max-width: 900px) {
+          width: 100%;
+          position: unset;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .about_text {
+        width: 55%;
+
+        p {
+          font-size: 13px;
+          color: #ffffff;
+          font-family: 'Montserratarm-Medium';
+          margin: 0;
+
+          &:first-child {
+            padding-bottom: 15px;
+          }
+        }
+        @media (max-width: 900px) {
+          width: 100%;
+        }
+      }
+
+      .mony1 {
+        position: absolute;
+        right: 1%;
+        top: -10%;
+        @media (max-width: 650px) {
+          top: -5%;
+        }
+        @media (max-width: 400px) {
+          width: 80px;
+          top: -3%;
+        }
+      }
+
+      .mony2 {
+        position: absolute;
+        left: -6%;
+        bottom: 0%;
+        @media (max-width: 1250px) {
+          left: -8%;
+        }
+        @media (max-width: 1000px) {
+          left: -9%;
+        }
+        @media (max-width: 650px) {
+          width: 100px;
+        }
+        @media (max-width: 400px) {
+          width: 80px;
+        }
+      }
+
+      .mony3 {
+        position: absolute;
+        left: 5%;
+        bottom: -10%;
+        @media (max-width: 650px) {
+          bottom: -4%;
+          left: 6%;
+        }
+        @media (max-width: 400px) {
+          width: 50px;
+          bottom: -2%;
+          left: 25%;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        height: 470px;
+      }
+      @media (max-width: 900px) {
+        height: auto;
+        flex-direction: column;
+        padding: 55px 44px;
+      }
+      @media (max-width: 650px) {
+        .about_block {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

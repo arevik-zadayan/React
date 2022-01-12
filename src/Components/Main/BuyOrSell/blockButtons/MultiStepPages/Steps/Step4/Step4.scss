@@ -1,0 +1,25 @@
+@import "../../StepStyle";
+
+
+.timer {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-family: "Montserratarm-ExtraBold";
+
+  svg {
+    margin-left: 25px;
+  }
+}
+.step4_btn_container{
+  @include container();
+
+  .main_btn__arrows {
+    @include main_btn__arrows();
+  }
+
+  @media screen and (max-width: 410px) {
+    width: 70%;
+  }
+}

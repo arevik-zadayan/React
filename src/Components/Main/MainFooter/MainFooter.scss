@@ -1,0 +1,124 @@
+.main_footer {
+  background-color: #FDDF00;
+
+  .footer_container {
+    width: 60%;
+    margin: 0 auto;
+
+    .dev_logo {
+      font-family: 'Montserratarm-Medium';
+      font-size: 14px;
+      text-align: center;
+      color: #182E33;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 370px) {
+        flex-wrap: wrap;
+      }
+
+      a {
+        color: #182E33;
+        text-decoration: none;
+
+        img {
+          width: 100px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .footer_text {
+      text-align: left;
+      padding-top: 48px;
+      padding-bottom: 42px;
+
+      p {
+        color: #182E33;
+        font-size: 12px;
+        font-family: 'Montserratarm-Medium';
+      }
+    }
+
+    .footer_logo {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .left {
+        background-color: #FFE029;
+        border-radius: 20px;
+        box-shadow: 7px 7px 5px #D6B516BF;
+        padding: 15px 30px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+          margin: 0 5px;
+        }
+      }
+
+      .right {
+        margin-left: 70px;
+
+        a {
+          display: inline-block;
+        }
+
+        img {
+          width: 35px;
+          margin-right: 10px;
+          transition: all ease-in-out 150ms;
+
+          &:hover {
+            transform: translateY(-7px);
+            transform: translate(0, -8);
+          }
+
+          @media (max-width: 450px) {
+            /*margin-right: 0;*/
+            margin-left: 10px;
+          }
+        }
+
+        @media (max-width: 1185px) {
+          margin-top: 30px;
+          margin-left: 0;
+        }
+
+        //@media (max-width: 1000px) {
+        //  padding-right: 10px;
+        //}
+        //@media (max-width: 450px) {
+        //  padding-right: 0px;
+        //  text-align: center;
+        //}
+      }
+
+      @media (max-width: 1185px) {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 80%;
+    }
+  }
+
+  .footer_bg {
+    width: 100%;
+    display: flex;
+
+    img {
+      width: 100%;
+    }
+  }
+}

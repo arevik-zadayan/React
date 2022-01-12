@@ -1,0 +1,143 @@
+.block {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7%;
+
+  h1 {
+    color: #FDDF00;
+    font-size: 45px;
+    line-height: 54px;
+    font-family: "Montserratarm-ExtraBold";
+    @media (max-width: 500px) {
+      font-size: 35px;
+    }
+  }
+
+  .activeStep {
+    height: 50px;
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #0000006b;
+    border-radius: 57px;
+    display: flex;
+    height: 430px;
+    position: relative;
+    @media screen and (max-width: 1500px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 400px) {
+      height: 480px;
+      width: 95%;
+      border-radius: 30px;
+
+    }
+
+    .coin1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(50%, 50%);
+      width: 100px;
+    }
+
+    .coin2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -30%);
+      width: 120px;
+    }
+
+    .coin3 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-70%, 50%);
+    }
+
+    .coin4 {
+      position: absolute;
+      left: -7%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+    }
+
+    @media screen and (max-width: 1300px) {
+      .coin1 {
+        width: 100px;
+      }
+      .coin4 {
+        left: -5%;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .coin3 {
+        transform: translate(-50%, 50%);
+      }
+      .coin2 {
+        width: 100px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+
+      .coin3 {
+        transform: translate(-45%, 100%);
+        width: 80px;
+      }
+
+      .coin2 {
+        width: 70px;
+        transform: translate(40%, -35%);
+      }
+
+      .coin1 {
+        width: 70px;
+        transform: translate(35%, 50%);
+      }
+
+      .coin4 {
+        left: 0;
+      }
+    }
+    @media screen and (max-width: 410px) {
+      .coin2 {
+        display: none;
+      }
+      .coin3 {
+        display: none;
+      }
+      .coin1 {
+        display: none;
+      }
+      .coin4 {
+        display: none;
+      }
+    }
+  }
+}
+.fade {
+  animation: fade-in-keyframes 1.5s;
+}
+
+@keyframes fade-in-keyframes {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+
+
+
+

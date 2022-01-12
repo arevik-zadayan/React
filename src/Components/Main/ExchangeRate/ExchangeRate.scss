@@ -1,0 +1,50 @@
+.exchange_rate {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7%;
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    @media screen and (max-width: 1500px){
+      width: 80%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 80%;
+    }
+
+    .info_text,.info_texts {
+      text-align: left;
+      color: #ffffff;
+      font-family: 'Montserratarm-Medium';
+      font-size: 12px;
+      margin-top: 60px;
+      @media screen and (max-width: 900px) {
+       margin-top: 30px;
+      }
+      @media screen and (max-width: 500px) {
+        margin-top: 15px;
+      }
+    }
+    .info_texts{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      p{
+      width: 45%;
+        @media screen and (max-width: 500px) {
+         width: 100%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

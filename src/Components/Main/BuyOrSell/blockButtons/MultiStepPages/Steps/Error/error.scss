@@ -1,0 +1,21 @@
+@import "../../StepStyle";
+
+.error_container {
+  width: 100%;
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-family: "Montserratarm-Medium";
+    margin-bottom: 30px;
+  }
+
+  .main_btn__arrows {
+    @include main_btn__arrows();
+    width: 55%;
+  }
+
+  @media screen and (max-width: 410px) {
+    width: 70%;
+  }
+}

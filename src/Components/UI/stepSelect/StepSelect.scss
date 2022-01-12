@@ -1,0 +1,288 @@
+.step_select {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+
+  .btn__arrows {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: "Montserratarm-ExtraBold";
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease 0s;
+    color: #182E33;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 0px;
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid transparent;
+      border-right: 32px solid #ffffff;
+      border-bottom: 20px solid transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 0px;
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid transparent;
+      border-left: 32px solid #ffffff;
+      border-bottom: 20px solid transparent;
+    }
+
+    @media screen and (max-width: 410px) {
+      width: 70%;
+    }
+  }
+
+  .opened {
+    &:after {
+      border-bottom: 20px solid #ffffff;
+    }
+  }
+
+  .input {
+    width: 50%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: "Montserratarm-Medium";
+    line-height: 17px;
+
+    &::placeholder {
+      color: #c4c4c4;
+    }
+  }
+
+  .select_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    flex-direction: column;
+    position: relative;
+
+    .select_block {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .select_cont {
+      width: 100%;
+      z-index: 5;
+      position: relative;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      svg {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @media screen and (max-width: 500px) {
+          width: 18px;
+        }
+      }
+
+      .crypto_select {
+        width: 100%;
+
+        .css-4ljt47-MenuList {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+
+          div {
+            padding: 4px;
+            font-family: "Montserratarm-Medium";
+            color: #182E33;
+            font-size: 16px;
+            @media screen and (max-width: 500px) {
+              font-size: 14px;
+            }
+
+          }
+        }
+        .css-11unzgr {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+
+          div {
+            padding: 4px;
+            font-family: "Montserratarm-Medium";
+            color: #182E33;
+            font-size: 16px;
+            @media screen and (max-width: 500px) {
+              font-size: 14px;
+            }
+
+          }
+        }
+
+        .css-26l3qy-menu {
+          margin-top: 0 !important;
+          border-radius: 0 !important;
+          width: 100% !important;
+          left: 50% !important;
+          transform: translateX(-50%) !important;
+          //background: #FEDF00;
+          color: #182E33;
+          box-shadow: 0px 20px 24px -10px rgba(0, 0, 0, 0.51);
+          padding: 12px 0;
+        }
+
+        .css-tj5bde-Svg {
+          display: none;
+        }
+
+        .css-1okebmr-indicatorSeparator {
+          width: 0;
+        }
+
+        .css-1pahdxg-control {
+          &:hover {
+            border: none;
+          }
+
+          box-shadow: none;
+          cursor: pointer;
+          width: 80%;
+          flex-direction: row-reverse;
+          margin: 0 auto;
+          min-height: 30px;
+          color: white;
+          border: none;
+          font-family: "Montserratarm-Medium";
+        }
+
+        .css-319lph-ValueContainer {
+          padding: 0px 8px !important;
+          justify-content: flex-start;
+        }
+
+        .css-1s2u09g-control {
+          background: transparent;
+          min-height: 25px;
+          font-family: "Montserratarm-Medium";
+          font-size: 16px;
+          color: #ffffff;
+          outline: none;
+          width: 80%;
+          flex-direction: row-reverse;
+          margin: 0 auto;
+          border: none;
+          @media screen and (max-width: 700px) {
+            width: 95%;
+          }
+
+        }
+
+        .css-14dclt2-Input {
+          margin: 0;
+          padding: 0;
+        }
+
+        .css-14el2xx-placeholder {
+          color: #ffffff59;
+          font-size: 15px;
+          @media screen and (max-width: 500px) {
+            font-size: 13px;
+          }
+
+        }
+
+        .css-qc6sy-singleValue {
+          color: #182E33;
+        }
+
+        .css-1n7v3ny-option {
+          background: #9E8B00;
+          cursor: pointer;
+          color: white;
+
+          &:active {
+            background: #FBDD00;
+          }
+        }
+
+        .css-9gakcf-option {
+          background: #FBDD00;
+
+          &:active {
+            background: #FBDD00;
+          }
+        }
+
+        .css-yt9ioa-option {
+          &:active {
+            background: #FBDD00;
+          }
+
+          &:focus {
+            background: #FBDD00;
+          }
+        }
+        .css-8mmkcg{
+          display: none;
+        }
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .blanket {
+      bottom: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      position: fixed;
+      zindex: 1;
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 35%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 500px) {
+      width: 43%;
+    }
+    @media screen and (max-width: 340px) {
+      width: 48%;
+    }
+  }
+}
+
+
+
+
+
+

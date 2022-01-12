@@ -1,0 +1,163 @@
+@import "../../StepStyle";
+.method_title{
+  color: white;
+  margin: 0;
+  font-family: 'Montserratarm-Medium';
+}
+.img_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 440px) {
+    justify-content: space-around;
+  }
+  .img_block {
+    background-color: #00000059;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 2px #0000002b;
+    width: 45%;
+    transition: 0.5s all;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+
+    &:nth-child(1) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+    &:hover{
+      border: 2px solid #FBDD00;
+      transition: 0.5s all;
+      //transform: translate(10px,-10px);
+    }
+
+    @media screen and (max-width: 410px) {
+      margin-bottom: 20px;
+      width: 40%;
+    }
+
+  }
+  .active_img{
+    border: 2px solid #FBDD00;
+    transform: translate(10px,-5px);
+  }
+}
+.input_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media screen and (max-width: 410px) {
+    margin-bottom: 20px;
+  }
+}
+.fadein{
+   animation: slide 1s ease-out;
+}
+@-moz-keyframes slide /* Firefox */
+{
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide /* Safari and Chrome */
+{
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes slide /* IE10 */
+{
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes slide
+{
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+.step2_container {
+  @include container();
+
+  .main_btn__arrows {
+    @include main_btn__arrows();
+  }
+
+  .second_btn {
+    @include second_btn();
+  }
+
+  @media screen and (max-width: 410px) {
+    width: 70%;
+  }
+}

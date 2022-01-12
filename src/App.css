@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+  background-color: #182E33;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: 'Montserratarm-ExtraBold';
+  src: url('Fonts/Montserratarm-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Montserratarm-Bold';
+  src: url('Fonts/Montserratarm-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Montserratarm-Regular';
+  src: url('Fonts/Montserratarm-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Montserratarm-Medium';
+  src: url('Fonts/Montserratarm-Medium.otf');
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0bfbf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A1315;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #101E21;
+}
+
+.spiner_block {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: #182E33;
+  z-index: 99999999;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

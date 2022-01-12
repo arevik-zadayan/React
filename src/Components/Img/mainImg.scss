@@ -1,0 +1,23 @@
+.block__img {
+    width: 40%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+img {
+    height: 130%;
+    transform: translateX(-15%);
+}
+}
+@media (max-width: 1000px) {
+    .block__img {
+    img {
+        height: 120%;
+    }
+}
+}
+@media (max-width: 1100px) {
+    .block__img {
+        display: none;
+    }
+}

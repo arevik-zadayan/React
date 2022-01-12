@@ -1,0 +1,32 @@
+footer {
+    .footer_bg {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .dev_logo {
+        font-family: 'Montserratarm-Medium';
+        font-size: 14px;
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 370px) {
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+
+            img {
+                width: 100px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../StepStyle";
+
+.step1_container{
+  @include container();
+
+  .main_btn__arrows{
+    @include main_btn__arrows();
+  }
+
+  .second_btn{
+    @include second_btn();
+  }
+
+  @media screen and (max-width: 410px) {
+    width: 70%;
+  }
+}

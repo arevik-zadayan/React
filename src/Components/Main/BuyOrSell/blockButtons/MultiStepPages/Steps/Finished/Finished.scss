@@ -1,0 +1,37 @@
+@import "../../StepStyle";
+
+.finished {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  p {
+    font-size: 14px;
+    font-family: "Montserratarm-Medium";
+    color: white;
+    margin: 40px 0;
+  }
+
+  .info_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      font-size: 17px;
+      font-family: "Montserratarm-ExtraBold";
+      color: white;
+    }
+  }
+
+  .img_div {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .main_btn__arrows {
+    @include main_btn__arrows();
+  }
+}

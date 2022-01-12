@@ -1,0 +1,148 @@
+.blog {
+  background: #182E33;
+
+  .container {
+    width: 60%;
+    margin: auto;
+
+    @media (max-width: 1500px) {
+      width: 80%;
+    }
+    @media (max-width: 1000px) {
+      width: 85%;
+    }
+
+    .title {
+      font-family: 'Montserratarm-ExtraBold';
+      font-size: 45px;
+      color: #FBDD00;
+      margin: 0;
+      text-align: center;
+      margin-bottom: 100px;
+      padding-top: 30px;
+      text-shadow: 2px 2px 4px #182e33;
+      @media (max-width: 700px) {
+        padding-top: 40px;
+        margin-bottom: 70px;
+      }
+      @media (max-width: 450px) {
+        font-size: 35px;
+      }
+    }
+
+    .blog_img_block {
+      display: flex;
+      align-items: center;
+      height: 360px;
+      position: relative;
+      /*background-image: url('../../Img/blog_bg.png');*/
+      /*background-size: cover;*/
+      background-color: #00000087;
+      border-radius: 57px;
+
+      .first_img {
+        /*width: 100%;*/
+        /*height: 355px;*/
+        width: 95%;
+        margin: auto;
+        background-image: url('../../Img/blog_bg.png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        height: 303px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+          width: 100%;
+        }
+
+        @media (max-width: 1000px) {
+          height: 233px;
+        }
+        @media (max-width: 700px) {
+          height: 133px;
+        }
+        @media (max-width: 450px) {
+          height: 73px;
+        }
+      }
+
+      .sec_img {
+        /*width: 535px;*/
+        height: 100%;
+        position: absolute;
+        top: -15%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+          /*width: 100%;*/
+          height: 125%;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        height: 290px;
+      }
+      @media (max-width: 700px) {
+        height: 190px;
+      }
+      @media (max-width: 450px) {
+        height: 130px;
+        border-radius: 37px;
+      }
+    }
+
+    .about_blog {
+      p {
+        font-family: 'Montserratarm-Medium';
+        font-size: 12.5px;
+        color: #ffffff;
+        margin: 0;
+        padding-top: 90px;
+        padding-bottom: 60px;
+        @media (max-width: 700px) {
+          padding: 50px 0;
+        }
+      }
+    }
+
+    .blog_block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .blog_footer {
+    text-align: right;
+    padding-right: 65px;
+    padding-bottom: 39px;
+  a{
+    display: inline-block;
+  }
+    img {
+      width: 35px;
+      margin-right: 10px;
+      transition: all ease-in-out 150ms;
+
+      &:hover {
+        transform: translateY(-7px);
+      }
+
+      @media (max-width: 450px) {
+        /*margin-right: 0;*/
+        margin-left: 25px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      padding-right: 10px;
+    }
+    @media (max-width: 450px) {
+      padding-right: 0px;
+      text-align: center;
+    }
+  }
+}

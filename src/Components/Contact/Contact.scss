@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  width: 100%;
+  text-align: center;
+  /*padding-top: 50px;*/
+  background: #182E33;
+  background-image: url('../../Img/Path 20.png');
+  background-repeat: no-repeat;
+
+  h1 {
+    color: #FDDF00;
+    font-size: 45px;
+    line-height: 54px;
+    font-family: "Montserratarm-ExtraBold";
+    margin-top: 0;
+    padding-top: 30px;
+    text-shadow: 2px 2px 4px #182e33;
+
+    @media (max-width: 500px) {
+      font-size: 35px;
+    }
+  }
+
+  .contact_container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #00000087;
+    border-radius: 57px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+
+    .coin1 {
+      position: absolute;
+      width: 130px;
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 0);
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .coin2 {
+      position: absolute;
+      top: 0;
+      right: 10%;
+      width: 70px;
+      transform: translate(-100%, -50%);
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .coin3 {
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+      width: 100px;
+      transform: translate(50%, -50%);
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .map {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 55px 0;
+
+      .map_cont {
+        width: 80%;
+        height: 300px;
+        border-radius: 25px;
+
+        @media (max-width: 1300px) {
+          width: 85%;
+        }
+
+        @media (max-width: 800px) {
+          height: 200px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        width: 100%;
+        justify-content: center;
+        padding: 30px 0;
+      }
+    }
+
+    .forms {
+      width: 50%;
+      padding: 55px 0;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+      }
+
+      input {
+        height: 46px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        margin-bottom: 24px;
+        font-family: "Montserratarm-Medium";
+        outline: none;
+        text-indent: 10px;
+      }
+
+      textarea {
+        outline: none;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 138px;
+        border-radius: 10px;
+        text-indent: 10px;
+        padding-top: 10px;
+        font-family: 'Montserratarm-Medium';
+        resize: none;
+
+        @media (max-width: 800px) {
+          height: 100px;
+        }
+      }
+
+      button {
+        position: relative;
+        font-family: 'Montserratarm-ExtraBold';
+        border: none;
+        color: #182E33;
+        height: 40px;
+        background-color: #FEDF00;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s ease 0s;
+        font-size: 23px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: 100%;
+          top: 0px;
+          width: 0px;
+          height: 0px;
+          border-top: 20px solid transparent;
+          border-right: 28px solid #FEDF00;
+          border-bottom: 20px solid transparent;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 100%;
+          top: 0px;
+          width: 0px;
+          height: 0px;
+          border-top: 20px solid transparent;
+          border-left: 28px solid #FEDF00;
+          border-bottom: 20px solid transparent;
+        }
+
+        &:hover {
+          box-shadow: 0px 5px 15px rgba(254, 223, 0, 0.4);
+          transform: translateY(-3px);
+        }
+
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
+
+        @media (max-width: 350px) {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .contact__info {
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+      justify-content: space-between;
+
+      .info__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          margin-left: 20px;
+          font-size: 20px;
+          font-family: 'Montserratarm-Medium';
+          color: #ffffff;
+
+          @media (max-width: 1500px) {
+            font-size: 18px;
+          }
+
+          @media (max-width: 1300px) {
+            font-size: 16px;
+            margin-left: 10px;
+          }
+
+          @media (max-width: 350px) {
+            font-size: 13px;
+          }
+        }
+
+        @media (max-width: 800px) {
+          justify-content: flex-start;
+
+          svg {
+            width: 20px;
+          }
+        }
+      }
+
+      @media (max-width: 1300px) {
+        width: 85%;
+      }
+
+      @media (max-width: 800px) {
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 1500px) {
+      width: 80%;
+    }
+    @media (max-width: 1300px) {
+      margin-bottom: 100px;
+    }
+    @media (max-width: 700px) {
+      margin-bottom: 50px;
+    }
+  }
+}

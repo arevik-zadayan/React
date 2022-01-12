@@ -1,0 +1,225 @@
+
+.select_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  flex-direction: column;
+  position: relative;
+
+  .btn__arrows {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    font-family: "Montserratarm-Medium";
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #182E33;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 0px;
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid transparent;
+      border-right: 32px solid #ffffff;
+      border-bottom: 20px solid transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 0px;
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid transparent;
+      border-left: 32px solid #ffffff;
+      border-bottom: 20px solid transparent;
+    }
+
+    .currency_name {
+      display: flex;
+      align-items: center;
+
+      svg {
+        @media screen and (max-width: 500px) {
+          width: 18px;
+        }
+      }
+
+      p {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .select_cont {
+    width: calc(90% + 64px);
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    z-index: 12;
+
+    .crypto_select {
+      .css-4ljt47-MenuList {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        div {
+          padding: 4px;
+          font-family: "Montserratarm-Medium";
+          color: #182E33;
+          font-size: 16px;
+        }
+      }
+
+      .css-11unzgr {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        div {
+          padding: 4px;
+          font-family: "Montserratarm-Medium";
+          color: #182E33;
+          font-size: 16px;
+        }
+      }
+
+      .css-26l3qy-menu {
+        margin-top: 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        background: #ffffff;
+        color: #182E33;
+        box-shadow: 0px 20px 24px -10px rgba(0, 0, 0, 0.51);
+        padding: 12px 0;
+      }
+
+      .css-1okebmr-indicatorSeparator {
+        width: 0;
+      }
+
+      .css-1pahdxg-control {
+        &:hover {
+          border: 1px solid #c4c4c4;
+        }
+
+        box-shadow: none;
+        cursor: pointer;
+        width: 80%;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        border-radius: 50px;
+        min-height: 30px;
+        color: white;
+        border: 1px solid #c4c4c4;
+        font-family: "Montserratarm-Medium";
+      }
+
+      .css-319lph-ValueContainer {
+        padding: 0px 8px !important;
+        justify-content: flex-start;
+      }
+      .css-1d8n9bt{
+        padding: 0px 8px !important;
+        justify-content: flex-start;
+      }
+
+      .css-1s2u09g-control {
+        background: #ffffff;
+        min-height: 25px;
+        font-family: "Montserratarm-Medium";
+        font-size: 16px;
+        color: #c4c4c4;
+        outline: none;
+        width: 80%;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        border-radius: 50px;
+        border: 1px solid #c4c4c4;
+      }
+
+      .css-14el2xx-placeholder {
+        color: #adadad;
+        font-size: 15px;
+      }
+
+      .css-qc6sy-singleValue {
+        color: #182E33;
+      }
+
+      .css-1n7v3ny-option {
+        background: #9E8B00;
+        cursor: pointer;
+        color: white;
+
+        &:active {
+          background: #dcc61f;
+        }
+      }
+
+      .css-9gakcf-option {
+        background: #FDDF00;
+
+        &:active {
+          background: #dcc61f;
+        }
+      }
+
+      .css-yt9ioa-option {
+        &:active {
+          background: #dcc61f;
+        }
+
+        &:focus {
+          background: #dcc61f;
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+  .opened {
+    &:before {
+      border-bottom: 20px solid #ffffff;
+    }
+
+    &:after {
+      border-bottom: 20px solid #ffffff;
+    }
+  }
+
+  .blanket {
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    zindex: 1;
+  }
+
+  @media screen and (max-width: 410px) {
+    width: 70%;
+  }
+}
